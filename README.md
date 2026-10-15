@@ -17,10 +17,10 @@
 
 ### 📺 Watch the Zero-Shot Racing Demonstration
 
-[![Watch the Demonstration Video](outputs/trajectory_Catalunya.png)](outputs/demonstration.mp4)
+![Zero-Shot Racing Demonstration](outputs/demonstration.gif)
 
 <p>
-  <em>Click the image above to watch the video, or access it directly: <a href="outputs/demonstration.mp4"><strong>Demonstration.mp4</strong></a></em>
+  <em>Direct video link: <a href="outputs/demonstration.mp4"><strong>Demonstration.mp4</strong></a> | Poster: <a href="outputs/trajectory_Catalunya.png"><strong>Catalunya Zero-Shot Trajectory</strong></a></em>
 </p>
 
 </div>
@@ -121,8 +121,8 @@ flowchart TB
 * **`Temporally Abstract World Model` (TAWM)**: A forward dynamics network predicting:
   1. $\Delta \mathbf{s}$: Change in 55-dimensional physical state after 1 second.
   2. $\Delta \text{prog}$: Centimeter progress along the track.
-  3. $\text{min\_range}$: Minimum obstacle clearance across the entire maneuver.
-* **`LowLevelPolicy` ($\pi(a | \mathbf{e}_t, z)$)**: A high-rate decoder unrolling latent skill $z$ into 20 continuous motor commands $[\delta_t, v_t]$ at 20 Hz.
+  3. $\text{minRange}$: Minimum obstacle clearance across the entire maneuver.
+* **`LowLevelPolicy`**: A high-rate decoder unrolling latent skill $z$ into 20 continuous motor commands $[\delta_t, v_t]$ at 20 Hz.
 
 ---
 
