@@ -1,0 +1,9 @@
+.venv/
+f1tenth_gym/
+f1tenth_racetracks/
+CODE_AND_JOURNEY_WALKTHROUGH.md
+CHANGELOG_AND_CHANGES.md
+README_demonstration.md
+__pycache__/
+*.py[cod]
+.DS_Store

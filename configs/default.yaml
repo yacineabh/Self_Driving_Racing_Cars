@@ -1,0 +1,37 @@
+seed: 0
+
+collection:
+  map_names: [Spielberg, Austin, MoscowRaceway]
+  episodes_per_map: 150
+  max_steps: 600              # control ticks per episode (600 * 0.05s = 30s)
+  speed_range: [2.0, 4.0]
+  steer_noise_std: 0.04       # OU innovation std
+  steer_noise_theta: 0.15     # mean reversion
+  speed_noise_std: 0.3
+  start_lateral_frac: 0.5
+  start_yaw_noise: 0.2        # rad
+  out_dir: data/offline
+  noise_scale_range: [0.5, 3.0]
+
+dataset:
+  horizon: 20                 # T: low-level steps per skill (20 ticks = 1s)
+  stride: 4
+
+model:
+  state_dim: 57               # 54 LiDAR beams + speed + 2 prev-action dims
+  action_dim: 2
+  embed_dim: 64
+  z_dim: 16
+  hidden: 256
+  kl_beta: 1.0
+  tawm_weight: 1.0
+  range_weight: 0.5           # weight of the integrated min-range loss head
+
+training:
+  batch_size: 256
+  epochs: 20
+  lr: 3.0e-4
+  grad_clip: 10.0
+  kl_warmup_steps: 3000
+  val_frac: 0.1
+  checkpoint_dir: checkpoints
