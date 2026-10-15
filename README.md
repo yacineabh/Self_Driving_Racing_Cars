@@ -11,23 +11,19 @@
 **SelfRace** proves this is possible. Trained strictly on offline driving logs from three training circuits, the car learns an **offline, skill-conditioned world model**. When dropped onto a novel, unseen racetrack, it uses **mental simulation (imagination planning)** to evaluate candidate trajectories in latent space, steers safely through narrow corridors, and finishes a complete 100% lap on its very first attempt.
 
 ---
-
 ## 🎬 Project Demonstration Video
 
 <div align="center">
 
 ### 📺 Watch the Zero-Shot Racing Demonstration
 
-<video src="outputs/demonstration.mp4" controls="controls" width="85%" poster="outputs/trajectory_F1TENTH_Circuit_1.png">
-  Your browser does not support the video tag. You can view the demo video directly: <a href="outputs/demonstration.mp4"><b>outputs/demonstration.mp4</b></a>.
-</video>
+[![Watch the Demonstration Video](outputs/trajectory_Catalunya.png)](outputs/demonstration.mp4)
 
 <p>
-  <em>Direct video link: <a href="outputs/demonstration.mp4"><strong>Demonstration.mp4</strong></a> | Poster: <a href="outputs/trajectory_Catalunya.png"><strong>Catalunya Zero-Shot Trajectory</strong></a></em>
+  <em>Click the image above to watch the video, or access it directly: <a href="outputs/demonstration.mp4"><strong>Demonstration.mp4</strong></a></em>
 </p>
 
 </div>
-
 ---
 
 ## 📑 Documentation Index
